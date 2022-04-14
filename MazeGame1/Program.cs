@@ -8,6 +8,8 @@ using MazePrototype;
 
 Console.WriteLine("Maze Game");
 
+BigBad.Instance.Name = "Singleton Boss";
+
 MazeGameCreator game = new();
 game.CreateMaze("Maze 1");
 
