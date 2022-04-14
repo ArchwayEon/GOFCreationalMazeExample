@@ -10,8 +10,9 @@
   <ItemGroup>
     <ProjectReference Include="..\MazeAbstractFactory\MazeAbstractFactory.csproj" />
     <ProjectReference Include="..\MazeBuilderLib\MazeBuilderLib.csproj" />
-    <ProjectReference Include="..\MazeGame2\MazeFactory.csproj" />
+    <ProjectReference Include="..\MazeGame2\MazeFactoryMethodLib.csproj" />
     <ProjectReference Include="..\MazeLib\MazeLib.csproj" />
+    <ProjectReference Include="..\MazePrototype\MazePrototype.csproj" />
   </ItemGroup>
 
 </Project>

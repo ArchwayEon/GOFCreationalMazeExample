@@ -1,15 +1,10 @@
 ﻿using MazeAbstractFactory;
 using MazeBuilderLib;
 using MazeLib;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MazeGame1;
+namespace MazeGameConsole;
 
-public class MazeGame
+public class MazeGameCreator
 {
     public Maze? Maze { get; set; }
 

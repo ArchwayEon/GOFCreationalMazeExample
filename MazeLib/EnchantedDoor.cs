@@ -12,6 +12,14 @@ public class EnchantedDoor : Door
     {
     }
 
+    public EnchantedDoor()
+    {
+    }
+
+    public EnchantedDoor(EnchantedDoor copy) : base(copy)
+    {
+    }
+
     public override void Enter()
     {
         base.Enter();

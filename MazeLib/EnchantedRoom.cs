@@ -8,7 +8,14 @@ namespace MazeLib;
 
 public class EnchantedRoom : Room
 {
+    public EnchantedRoom()
+    {
+    }
     public EnchantedRoom(int roomNumber) : base(roomNumber)
+    {
+    }
+
+    public EnchantedRoom(EnchantedRoom copy) : base(copy)
     {
     }
 

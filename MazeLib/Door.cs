@@ -12,11 +12,28 @@ public class Door : MapSite
     protected Room? _room2;
     protected bool _isOpen;
 
+    public Door()
+    {
+    }
+
     public Door(Room room1, Room room2)
     {
         _room1 = room1;
         _room2 = room2;
         _isOpen = false;
+    }
+
+    public Door(Door copy)
+    {
+        _room1 = copy._room1;
+        _room2 = copy._room2;
+        _isOpen = copy._isOpen;
+    }
+
+    public void SetRooms(Room room1, Room room2)
+    {
+        _room1 = room1;
+        _room2 = room2;
     }
 
     public override void Enter()
@@ -35,5 +52,10 @@ public class Door : MapSite
     public Room? OtherSideFrom (Room room)
     {
         return null;
+    }
+
+    public override MapSite Clone()
+    {
+        return new Door(this);
     }
 }

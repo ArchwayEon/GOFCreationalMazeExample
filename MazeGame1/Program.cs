@@ -1,16 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using MazeAbstractFactory;
 using MazeBuilderLib;
-using MazeGame1;
-using MazeGame2;
+using MazeGameConsole;
+using MazeFactoryMethodLib;
 using MazeLib;
+using MazePrototype;
 
 Console.WriteLine("Maze Game");
 
-MazeGame game = new();
+MazeGameCreator game = new();
 game.CreateMaze("Maze 1");
 
-Console.WriteLine("Maze 1");
+Console.WriteLine("\nMaze 1");
 Room? currentRoom = game.Maze!.GetRoom(1);
 currentRoom!.Enter();
 Console.WriteLine(currentRoom.Message);
@@ -21,7 +22,7 @@ location = currentRoom.GetSide(Direction.North);
 location.Enter();
 Console.WriteLine(location.Message);
 
-Console.WriteLine("Maze 2");
+Console.WriteLine("\nMaze 2");
 game.CreateMaze("Maze 2", new MazeFactory());
 currentRoom = game.Maze!.GetRoom(1);
 currentRoom!.Enter();
@@ -33,7 +34,7 @@ location = currentRoom.GetSide(Direction.North);
 location.Enter();
 Console.WriteLine(location.Message);
 
-Console.WriteLine("Maze 3");
+Console.WriteLine("\nMaze 3");
 game.CreateMaze("Maze 3", new EnchantedMazeFactory());
 currentRoom = game.Maze!.GetRoom(1);
 currentRoom!.Enter();
@@ -45,7 +46,8 @@ location = currentRoom.GetSide(Direction.North);
 location.Enter();
 Console.WriteLine(location.Message);
 
-Console.WriteLine("Maze 4");
+
+Console.WriteLine("\nMaze 4");
 game.CreateMaze("Maze 4", new StandardMazeBuilder());
 currentRoom = game.Maze!.GetRoom(1);
 currentRoom!.Enter();
@@ -57,10 +59,29 @@ location = currentRoom.GetSide(Direction.North);
 location.Enter();
 Console.WriteLine(location.Message);
 
-MazeFactory2 factory = new MazeFactory2();
-Console.WriteLine("Maze 5");
+MazeFactoryMethod factory = new MazeFactoryMethod();
+Console.WriteLine("\nMaze 5");
 factory.CreateMaze("Maze 5");
 currentRoom = factory.Maze!.GetRoom(1);
+currentRoom!.Enter();
+Console.WriteLine(currentRoom.Message);
+location = currentRoom.GetSide(Direction.East);
+location.Enter();
+Console.WriteLine(location.Message);
+location = currentRoom.GetSide(Direction.North);
+location.Enter();
+Console.WriteLine(location.Message);
+
+Console.WriteLine("\nMaze 6");
+Maze baseMaze = new Maze();
+Room? baseRoom = new EnchantedRoom();
+Wall? baseWall = new Wall();
+Door? baseDoor = new EnchantedDoor();
+
+game.CreateMaze("Maze 6",
+    new MazePrototypeFactory(
+        baseMaze, baseRoom, baseWall!, baseDoor!));
+currentRoom = game.Maze!.GetRoom(1);
 currentRoom!.Enter();
 Console.WriteLine(currentRoom.Message);
 location = currentRoom.GetSide(Direction.East);

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeLib", "MazeLib\MazeLib.csproj", "{F22761B2-08B5-4FD1-846F-C05A8DA5DDA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeLib", "MazeLib\MazeLib.csproj", "{F22761B2-08B5-4FD1-846F-C05A8DA5DDA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeGame1", "MazeGame1\MazeGame1.csproj", "{078D05E4-BA68-4FBF-BFAD-F0278E95D158}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeGameConsole", "MazeGame1\MazeGameConsole.csproj", "{078D05E4-BA68-4FBF-BFAD-F0278E95D158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeAbstractFactory", "MazeAbstractFactory\MazeAbstractFactory.csproj", "{29FA1033-11B6-4FD0-AF02-4BA7A2BECC55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeAbstractFactory", "MazeAbstractFactory\MazeAbstractFactory.csproj", "{29FA1033-11B6-4FD0-AF02-4BA7A2BECC55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeBuilderLib", "MazeBuilderLib\MazeBuilderLib.csproj", "{506F94AA-81D6-4FDA-B7F3-7FC7CA8582A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeBuilderLib", "MazeBuilderLib\MazeBuilderLib.csproj", "{506F94AA-81D6-4FDA-B7F3-7FC7CA8582A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeFactory", "MazeGame2\MazeFactory.csproj", "{8FB60AA7-4712-4540-A795-31FB2F8C94D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeFactoryMethodLib", "MazeGame2\MazeFactoryMethodLib.csproj", "{8FB60AA7-4712-4540-A795-31FB2F8C94D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazePrototype", "MazePrototype\MazePrototype.csproj", "{54A5F88E-F24B-4810-B5C6-8574325446E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8FB60AA7-4712-4540-A795-31FB2F8C94D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FB60AA7-4712-4540-A795-31FB2F8C94D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FB60AA7-4712-4540-A795-31FB2F8C94D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54A5F88E-F24B-4810-B5C6-8574325446E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A5F88E-F24B-4810-B5C6-8574325446E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A5F88E-F24B-4810-B5C6-8574325446E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A5F88E-F24B-4810-B5C6-8574325446E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

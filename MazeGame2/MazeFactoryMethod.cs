@@ -1,8 +1,8 @@
 ﻿using MazeLib;
 
-namespace MazeGame2;
+namespace MazeFactoryMethodLib;
 
-public class MazeFactory2
+public class MazeFactoryMethod
 {
     public Maze? Maze { get; set; }
 
